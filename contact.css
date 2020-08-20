@@ -1,0 +1,29 @@
+
+body {
+  background-color: rgb(180, 176, 230);
+  
+  
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+} 
+
+table{
+  border: 1px solid black;
+background-color: blueviolet;   
+
+}
+.fieldset{bottom:600px;}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}

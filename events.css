@@ -1,0 +1,32 @@
+.container {
+  position: absolute;
+    font-family:cursive;
+  }
+  
+  .text-block1 {
+    position: absolute;
+    background-color: rgb(240, 131, 131);
+    color: white;
+    left: unset;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .text-block2 {
+    position: absolute;
+    left: 12cm;
+    background-color:green;
+    color: white;
+    padding-left: 2px;
+    padding-right: 2px;
+    height:532px;
+
+  }
+  .text-block3 {
+    position: absolute;
+    background-color: rgb(131, 147, 240);
+    color: white;
+    left: 24cm;
+    padding-left: 20px;
+    padding-right: 20px;
+  
+  }

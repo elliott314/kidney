@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <style>
+
+input[type=text],
+input[type=date],
+input[type=phone],
+input[type=address],
+input[type=password]
+{
+width: 100%;
+padding: 12px 20px; margin: 8px 0;
+display: inline-block;
+border: 2px solid royalblue;
+border-radius:10px;
+box-sizing: border-box;
+}
+.donor {
+      width:100%;
+      height:400px;
+      font-family:arial;
+      font-size:30px;
+
+}
+   aside  {
+       float: right;
+       list-style:none;
+       font-size:32px;
+}
+  h2,h3{
+        text-align: center;
+}
+  fieldset {
+
+          width:100% auto;
+}
+  h4 {
+     font-family:arial;
+
+}
+  footer {
+        width:100%;
+        height:100px;
+        background-color:red;
+}
+ 
+button {
+background-color: #48d1cc;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border:none;
+cursor: pointer;
+width: 100%;
+}
+.cancelbtn
+{
+width: auto;
+padding: 10px 18px; background-color: #4682b4;
+}
+.imgcontainer {
+text-align: center;
+margin: 24px 0 12px 0;
+position: relative;
+
+}
+img.avatar {
+width: 40%;
+border-radius: 50%;
+}
+.container {
+padding: 16px;
+}
+span.psw {
+float: right;
+padding-top: 16px;
+}
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.4); padding-top: 60px;
+}
+.modal-content {
+background-color: #fefefe;
+margin: 5% auto 15% auto;
+border: 1px solid #888;
+width: 80%;
+}
+.close {
+position: absolute;
+right: 25px;
+top: 0;
+color: #000;
+font-size: 35px;
+font-weight: bold;
+}
+.close:hover, .close:focus {
+color: red;
+cursor: pointer;
+}
+.animate {
+-webkit-animation: animatezoom 0.6s;
+animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+from {-webkit-transform: scale(0)} to {-webkit-transform: scale(1)} } @keyframes animatezoom { from {transform: scale(0)} to {transform: scale(1)}
+}
+@media screen and(max-width: 300px){ span.psw { display: block; float: none; } .cancelbtn { width: 100%; }
+}
+     header{
+      width:100%;
+      top:0;
+      right:0;
+      background-color: royalblue;
+      position:fixed; 
+      z-index:100;
+      opacity:0.9;
+}
+    nav ul {
+        float: right;
+        list-style:none;
+}
+      nav li {
+          float:left;
+          padding:20px 20px 20px 18px;
+                 
+}
+    li  a {
+        text-decoration:none;
+        font-size:20px; 
+        color:white;
+        font-weight:bold;
+        font-family:arial;
+}
+    #current {
+          text-decoration: underline white;
+}
+     a:hover:not(#current) {
+         text-decoration: underline white;
+       color: brown;
+}
+   #content {
+       display:none;  
+}
+     #drop-bttn:hover #content {
+        display:block;
+}
+     #logo {
+       float:left;
+}
+   p {
+     color:white;
+     transform: translate(30px, 20px);
+}
+.modal-content {
+             width:100%;
+         
+
+}
+
+   </style>
+  </head>
+  <body>
+    <header>
+      <a href="home.html" id="logo"><img src="assets/pic.png" width="100px" height="auto"/></a>
+<i><p style="float:left">Let's donate together</p></i>
+      <nav>
+        <ul>
+         <li><a href="home.html" id="current">Home</a></li>
+         <li><a href="what.html">What we do</a></li>
+         <li><a href="services.html">Service</a></li>
+         <li><a href="stories.html">Stories</a></li>
+         <li><a href="blogs.html">Blog</a></li>
+         <li><a href="contact.html">ContactNumber</a></li>
+         <li><a href="events.html">Events</a></li>
+         
+    
+         <li><a href="#" onclick="document. getElementById('id02') .style.display='block'" style="width:auto;" >Sign Up</a></li>
+    
+         <li><a href="#" onclick="document. getElementById('id01') .style.display='block'" style="width:auto;" >Sign In</a></li>
+        </ul>
+      </nav>
+    </header>
+<b><button class="donor" onclick="document. getElementById('id03') .style.display='block'" style="width:100%;background-color:brown";>
+CLICK HERE TO DONATE
+</button></b>
+<div class="modal-content"> <div class="mySlides">
+<img src="assets/new2.jpg"style="width:100%;height:400px"> </div>
+<div class="mySlides">
+<img src="assets/proud.jpg"style="width:100%; height:400px"> </div> <div class="mySlides">
+<img src="assets/pm.jpg"style="width:100%; height:400px"> </div> </div>
+<b><button class="donor" onclick="document. getElementById('id04') .style.display='block'" style="width:100%;background-color:brown";>
+CLICK HERE FOR RECIPIENT
+</button></b>
+
+<article>
+  <h2>WHAT WE DO</h2>
+<fieldset>
+    <h3 style="font-family:arial";>Here we ensure everyone is safe both the donor and recipient, so if you have to donate , you must be in a good healthy condition, medically fit. Moreover there are medical instruments to carry out this operations.</h3>
+</fieldset>
+</article>
+<br/><br/>
+<section style="float:left">
+<a href="home.html"><img src="assets/pic.png" style="height:500px";/></a>
+</section>
+<aside>
+<h4>Time Scheduled</h4>
+<h5>Monday: 7am-7pm</h5>
+    <h5>Tuesday: 7am-7pm</h5>
+    <h5>Wednesday: 7am-7pm</h5>
+    <h5>Thursday: 7am-7pm</h5>
+    <h5>Friday: 7am-7pm</h5>
+    <h5>Saturday: 7am-7pm</h5>
+</aside>
+<div class="clear"></div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+   <footer>
+     <ul style="list-style:none; text-align:center; font-weight:bold">
+       <li>Contact us : +99******</li>
+<li>Email us: kidneydonorc@gmail.com<</li>
+<li>&#169 Copy right 2020</li>
+<li>&#174 Registered</li>
+</ul>
+
+   </footer>
+<div id="id01" class="modal">
+<form class="modal-content animate" action="action_page.php">
+<div class="imgcontainer">
+<span onclick="document .getElementById('id01') .style.display='none'" class="close" title="Close Modal"> &times;</span>
+<h2 style="color: brown";>Kidney Donation</h2>
+<i><h4 style="color:blue";>Let's Donate Together</h4>
+</div>
+<div class="container"> <label><b>Username</b></label> <input type="text" placeholder= "Enter Username" name="uname" required>
+<label><b>Password</b></label> <input type="password" placeholder= "Enter Password"  id="myPass" required>
+<input type="checkbox" onclick="myName()"/>Show password
+<br/>
+<button type="submit">Sign In</button>
+<input type="checkbox" checked="checked"> Remember me </div>
+<div class="container" style="background-color:#f1f1f1"> <button type="button" onclick="document.getElementById ('id01').style. display='none'" class="cancelbtn"> Cancel</button> <span class="psw">Forgot <a href="#">password? </a>
+</span>
+</div>
+</form>
+</div>
+
+<div id="id02" class="modal">
+
+<form class="modal-content animate" action="action_page.php"> <div class="imgcontainer"> <span onclick="document .getElementById('id02') .style.display='none'" class="close" title="Close Modal"> &times;</span>
+<h2 style="color: brown";>Kidney Donation</h2>
+<i><h4 style="color:blue";>Let's Donate Together</h4> </div> <div class="container">
+<label><b>Firstname</b></label> <input type="text" placeholder= "Enter Your firstname..." name="Fname" required>
+<label><b>Lastname</b></label> <input type="text" placeholder= "Enter Your Lastname" name="lname" required>
+<label><b>Username or Email</b></label> <input type="text" placeholder= "Enter Username" name="uname" required> <label><b>Password</b></label> <input type="password" placeholder= "Enter Your Password" id="myOut" required>
+<input type="checkbox" onclick="myCode()"/>Show password
+<br/><br/>
+<label><b>Confirm Password</b></label> <input type="password" placeholder= "Enter Your Password" name="cpsw" id="myThird" required>
+<br/>
+<input type="checkbox" onclick="myFunction()"/>Show password
+<br/><br/>
+<label> <b>Blood Group</b></label>
+  <input type="radio" name="bg" required/>A
+  <input type="radio" name="bg" required/>B
+  <input type="radio" name="bg" required/>AB
+<input type="radio" name="bg" required/>O
+<br/><br/>
+<label> <b>Tissue Type</b></label>
+  <input type="text" name="tt" placeholder="Tissue Type" required/>
+<br/><br/>
+<label><b>Date Of Birth</b></label>
+<input type="date" name="date" required/>
+<label><b>Address</b><label>
+<br/>
+<input type="address" name="address" required/>
+<label><b>Phone</b></label>
+<br/>
+<input type="phone" name="phone" required/>
+<button type="submit">Sign Up</button>
+<input type="checkbox" checked="checked"> Remember me <br/><br/>
+<input type="radio" name="dor"/><b>Donor</b>
+<br/><br/>
+<input type="radio" name="dor"/><b>Recipient</b>
+</div>
+
+<div class="container" style="background-color:#f1f1f1">
+<button type="button" onclick="document.getElementById ('id02').style. display='none'" class="cancelbtn"> Cancel</button> <span class="psw">Forgot <a href="#">password? </a></span> </div> </form> </div> <script> // Get the modal var modal = document.getElementById ('id02'); // When the user clicks anywhere outside of the modal, close it window.onclick = function(event) { if (event.target == modal) { modal.style.display = "none"; } }
+</script>
+<div id="id03" class="modal">
+
+<form class="modal-content animate" action="action_page.php"> <div class="imgcontainer"> <span onclick="document .getElementById('id03') .style.display='none'" class="close" title="Close Modal"> &times;</span>
+<h2 style="color: brown";>Kidney Donation</h2>
+<i><h4 style="color:blue";>Let's Donate Together</h4> </div> <div class="container">
+<label><b>Firstname</b></label> <input type="text" placeholder= "Enter Your firstname..." name="Fname" required>
+<label><b>Lastname</b></label> <input type="text" placeholder= "Enter Your Lastname" name="lname" required>
+<label><b>Username or Email</b></label> <input type="text" placeholder= "Enter Username" name="uname" required> <label><b>Password</b></label> <input type="password" placeholder= "Enter Your Password" name="psw" id="myFourth" required>
+<br/>
+<input type="checkbox" onclick="myFour()"/>Show password
+<br/><br/>
+<label><b>Confirm Password</b></label> <input type="password" placeholder= "Enter Your Password" name="cpsw" id="myFifth" required>
+<br/>
+<input type="checkbox" onclick="myFive()"/>Show password
+<br/><br/>
+<label> <b>Blood Group</b></label>
+  <input type="radio" name="bg" required/>A
+  <input type="radio" name="bg" required/>B
+  <input type="radio" name="bg" required/>AB
+<input type="radio" name="bg" required/>O
+<br/><br/>
+<label> <b>Tissue Type</b></label>
+  <input type="text" name="tt" placeholder="Tissue Type" required/>
+<br/><br/>
+<label><b>Date Of Birth</b></label>
+<input type="date" name="date" required/>
+<label><b>Address</b><label>
+<br/>
+<input type="address" name="address" required/>
+<label><b>Phone</b></label>
+<br/>
+<input type="phone" name="phone" required/>
+<button type="submit">Sign Up</button>
+<input type="checkbox" checked="checked"> Remember me <br/><br/>
+<input type="Checkbox" name="dor" checked/><b>Donor</b>
+<br/><br/>
+</div>
+
+<div class="container" style="background-color:#f1f1f1">
+<button type="button" onclick="document.getElementById ('id03').style. display='none'" class="cancelbtn"> Cancel</button> <span class="psw">Forgot <a href="#">password? </a></span> </div> </form> </div> <script> // Get the modal var modal = document.getElementById ('id03'); // When the user clicks anywhere outside of the modal, close it window.onclick = function(event) { if (event.target == modal) { modal.style.display = "none"; } }
+</script>
+<div id="id04" class="modal">
+
+<form class="modal-content animate" action="action_page.php"> <div class="imgcontainer"> <span onclick="document .getElementById('id04') .style.display='none'" class="close" title="Close Modal"> &times;</span>
+<h2 style="color: brown";>Kidney Donation</h2>
+<i><h4 style="color:blue";>Let's Donate Together</h4> </div> <div class="container">
+<label><b>Firstname</b></label> <input type="text" placeholder= "Enter Your firstname..." name="Fname" required>
+<label><b>Lastname</b></label> <input type="text" placeholder= "Enter Your Lastname" name="lname" required>
+<label><b>Username or Email</b></label> <input type="text" placeholder= "Enter Username" name="uname" required> <label><b>Password</b></label> <input type="password" placeholder= "Enter Your Password" name="psw" id="mySixth" required>
+<input type="checkbox" onclick="mySix()"/>Show password
+<br/><br/>
+<label><b>Confirm Password</b></label> <input type="password" placeholder= "Enter Your Password" name="cpsw" id="mySeventh" required>
+<input type="checkbox" onclick="mySeven()"/>Show password
+<br/><br/>
+<label> <b>Blood Group</b></label>
+  <input type="radio" name="bg" required/>A
+  <input type="radio" name="bg" required/>B
+  <input type="radio" name="bg" required/>AB
+<input type="radio" name="bg" required/>O
+<br/><br/>
+<label> <b>Tissue Type</b></label>
+  <input type="text" name="tt" placeholder="Tissue Type" required/>
+<br/><br/>
+<label><b>Date Of Birth</b></label>
+<input type="date" name="date" required/>
+<label><b>Address</b><label>
+<br/>
+<input type="address" name="address" required/>
+<label><b>Phone</b></label>
+<br/>
+<input type="phone" name="phone" required/>
+<button type="submit">Sign Up</button>
+<input type="checkbox" checked="checked"> Remember me <br/><br/>
+<input type="checkbox" name="dor" checked/><b>Recipient</b>
+</div>
+
+<div class="container" style="background-color:#f1f1f1">
+<button type="button" onclick="document.getElementById ('id04').style. display='none'" class="cancelbtn"> Cancel</button> <span class="psw">Forgot <a href="#">password? </a></span> </div> </form> </div> <script> // Get the modal var modal = document.getElementById ('id04'); // When the user clicks anywhere outside of the modal, close it window.onclick = function(event) { if (event.target == modal) { modal.style.display = "none"; } }
+</script>
+<script>
+var modal = document.getElementById ('id01');
+
+window.onclick = function(event)
+{ if (event.target == modal) { modal.style.display = "none"; } } </script>
+<script>
+function myName() {
+  var x = document.getElementById("myPass");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+  </script>
+<script>
+function myCode() {
+  var x = document.getElementById("myOut");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+  </script>
+<script>
+function myFunction() {
+  var x = document.getElementById("myThird");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+  </script>
+<script>
+function myFour() {
+  var x = document.getElementById("myFourth");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+  </script>
+<script>
+function myFive() {
+  var x = document.getElementById("myFifth");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+  </script>
+<script>
+function mySix() {
+  var x = document.getElementById("mySixth");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+  </script>
+<script>
+function mySeven() {
+  var x = document.getElementById("mySeventh");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+  </script>
+<script> function openModal() { document.getElementById('myModal') .style.display = "block"; } function closeModal() { document.getElementById('myModal') .style.display = "none"; }
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display= "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+} </script>
+  </body>
+</html>
